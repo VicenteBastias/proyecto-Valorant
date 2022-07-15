@@ -6,21 +6,20 @@
     {% block content %}
     <form action="/registro/" method="post" class="form-container formulario">
         {% csrf_token %}
-        <div class="row">
-          <div class="col">
+          <div class="mb-3">
             <label for="" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="nombre" name="nombre">
           </div>
-          <div class="col">
+          <div class="mb-3">
             <label for="" class="form-label">Usuario</label>
             <input type="text" class="form-control" id="usuario" name="usuario">
           </div>
-          <div class="col">
+          <div class="mb-3">
             <label for="" class="form-label">Correo</label>
             <input type="text" class="form-control" name="correo" id="correo">
           </div>
         </div>
-          <div class="col">
+          <div class="mb-3">
             <label for="" class="form-label">Nacionalidad</label>
             <select name="nacionalidad" id="nacionalidad" class="form-select" >
               <option value="1">Chileno</option>
@@ -33,17 +32,17 @@
         </div>
         <div class="row">
           <div class="col">
-            <label for="" class="form-label">Edad</label>
+            <label for="" class="col-form-label">Edad</label>
             <input type="text" class="form-control" id="edad" name="edad">
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <label for="" class="form-label">Contraseña</label>
+            <label for="" class="col-form-label">Contraseña</label>
             <input type="password" class="form-control"  name="contrasena" id="contrasena">
           </div>
           <div class="col">
-            <label for="" class="form-label">Confirmar Contraseña</label>
+            <label for="" class="col-form-label">Confirmar Contraseña</label>
             <input type="password" class="form-control"  name="password_confirm" id="password_confirm">
           </div>
         </div>
