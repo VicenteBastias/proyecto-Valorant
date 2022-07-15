@@ -1,0 +1,81 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block title %} jugadas {% endblock %}
+
+    {% block content %} 
+    <form action="/jugadas/" method="post" class="form-container formulario">
+    {% csrf_token %}
+        <div class="row">
+          <div class="col">
+            <label for="" class="form-label">id usuario</label>
+            <input type="text" class="form-control" id="idusuario" name="idusuario">
+          </div>
+          <div class="col">
+            <label for="" class="form-label">Mapas</label>
+            <select name="mapa" id="mapa" class="form-select" >
+              <option value="1">Bind</option>
+              <option value="2">Ice box</option>
+              <option value="3">Split</option>
+              <option value="4">Fracture</option>
+              <option value="5">Heaven</option>
+              <option value="6">Acent</option>
+              <option value="8">Breeze</option>
+              <option value="9">Pearl</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="" class="form-label">Numero de Eliminaciones</label>
+            <input type="number" class="form-control" name="aliminaciones" id="aliminaciones">
+          </div>
+          <div class="col">
+            <label for="" class="form-label">Numero de Muertes</label>
+            <input type="number" class="form-control" name="muertes" id="muertes">
+          </div>
+          <div class="col">
+            <label for="" class="form-label">Agente Escogido</label>
+            <select name="agente" id="agente" class="form-select" >
+              <option value="1">Fade</option>
+              <option value="2">Breach</option>
+              <option value="3">Raze</option>
+              <option value="4">Chamber</option>
+              <option value="5">Kay/0</option>
+              <option value="6">Skye</option>
+              <option value="7">Cypher</option>
+              <option value="8">Sova</option>
+              <option value="9">killjoy</option>
+              <option value="10">Viper</option>
+              <option value="11">Phoenix</option>
+              <option value="12">Astra</option>
+              <option value="13">Brimstone</option>
+              <option value="14">Neon</option>
+              <option value="15">Yoru</option>
+              <option value="16">Sage</option>
+              <option value="17">Reyna</option>
+              <option value="18">Omen</option>
+              <option value="19">Jett</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+            <label for="" class="form-label">Selecciona tu rango</label>
+            <select name="rango" id="rango" class="form-select" >
+              <option value="1">hierro</option>
+              <option value="2">Bronce</option>
+              <option value="3">Plata</option>
+              <option value="4">Oro</option>
+              <option value="5">Platino</option>
+              <option value="6">Acendente</option>
+              <option value="8">Inmortal</option>
+              <option value="9">Radiante</option>
+            </select>
+          </div>
+        <div class="row">
+          <div class="col">
+            <br>
+            <input type="submit" value="Enviar" class="btn btn-primary">
+          </div>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    {% endblock %}

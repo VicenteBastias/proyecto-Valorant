@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} listar creadores {% endblock %}
+
+    {% block content %}
+      <form action="/listar_creador/" method="get" class="carrusel" style="text-align: center;">
+    {% csrf_token %}
+          <table class="table">
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>Nombre</th>
+                <th>Rango</th>
+                <th>Estilo</th>
+                <th>Agente</th>
+              </tr>
+            </thead>
+            {% if informacion %}
+            {% for info in informacion %}
+            <tbody>
+              <td>{{info.id}}</td>
+              <td>{{info.nombre}}</td>
+              <td>{{info.rango}}</td>
+              <td>{{info.estilo_juego}}</td>
+              <td>{{info.agente_main}}</td>
+            </tbody>
+            {% endfor %}
+            {% endif %}
+          </table>
+          <br>
+          <input class="botones" type="submit" value="Listar">
+          <button class="botones"><a href="/administracion_web/" class="link-dark" style="text-decoration: none;">Volver a inicio</a></button>
+      </form>
+      {% endblock %}

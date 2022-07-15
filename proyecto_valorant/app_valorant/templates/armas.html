@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} armas {% endblock %}
+
+    {% block content %}
+    <h2> Armas </h2>
+    <div class="card-group" >
+        <div class="card">
+          <img src="{%static 'img/vandal.webp'%}" class="card-img-top" alt="vandalFoto">
+          <div class="card-body">
+            <h5 class="card-title">Vandal</h5>
+            <p class="card-text">La Vandal inflige mucho daño a larga distancia y es ideal para aquellos que se centran en acertar tiros a la cabeza Sin embargo, va perdiendo estabilidad con el tiempo.</p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="{%static 'img/phantom.webp'%}" class="card-img-top" alt="phantomFoto">
+          <div class="card-body">
+            <h5 class="card-title">Phantom</h5>
+            <p class="card-text">En modo automático es perfecto para los encuentros en espacios reducidos, mientras que en ráfagas cortas son la opción indicada en cualquier otra situación. Es mucho más precisa si no se dispara en movimiento.</p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="{%static 'img/bulldog.webp'%}" class="card-img-top" alt="bulldogPhoto">
+          <div class="card-body">
+            <h5 class="card-title">Bulldog</h5>
+            <p class="card-text"> Rifle mas barato que sus hermanos mayores (vandal,phantom) pero que posee un poderoso modo alternativo dispone de una mira que  permite disparar ráfagas cortas con precisión a media y larga distancia.</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img src="{%static 'img/guardian.webp'%}" class="card-img-top" alt="guardianFoto">
+          <div class="card-body">
+            <h5 class="card-title">Guardian</h5>
+            <p class="card-text">Es el rifle para tiradores por excelencia. Es más pesado y cuenta con menos movilidad que los demás, pero también preciso y potente. Perfecto para cazar cabezas a larga y media distancia.</p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="{%static 'img/ares.webp'%}" class="card-img-top" alt="aresFoto">
+          <div class="card-body">
+            <h5 class="card-title">Ares</h5>
+            <p class="card-text">El gran cargador de la Ares significa que se le da de maravilla el fuego continuo e infligir grandes cantidades de daño a grupos de enemigos.</p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="{%static 'img/odin.webp'%}" class="card-img-top" alt="odinFoto">
+          <div class="card-body">
+            <h5 class="card-title">Odin</h5>
+            <p class="card-text">Dispara de forma continua e inflige mucho daño con una estabilidad sorprendente. perfecta para Cubrir de balas a los enemigos en espacios reducidos o recurrir al modo alternativo para convertiros en una torreta andante.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img src="{%static 'img/marshall.webp'%}" class="card-img-top" alt="marshalFoto">
+          <div class="card-body">
+            <h5 class="card-title">Marshal</h5>
+            <p class="card-text">Se trata de un fusil de francotirador ligero con una sola opción de zoom que mantendrá a los enemigos a raya. Eso sí, la baja velocidad de disparo garantiza que, si no aciertas en el objetivo, quedaras expuesto.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{%static 'img/operator.webp'%}" class="card-img-top" alt="operatorFoto">
+          <div class="card-body">
+            <h5 class="card-title">Operator</h5>
+            <p class="card-text">El Operator es un fusil de francotirador de cerrojo muy potente con zoom dual. Cuenta con una movilidad nula, pero sus balas derribarán a cualquiera de un solo impacto.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{%static 'img/bucky.webp'%}" class="card-img-top" alt="buckyFoto">
+          <div class="card-body">
+            <h5 class="card-title">Bucky</h5>
+            <p class="card-text">Pesada pero estable, el modo de disparo principal de la Bucky ayuda a vigilar esquinas en espacios reducidos y resulta ideal para cargar contra los enemigos cuerpo contra cuerpo. El modo de disparo alternativo es preciso a media distancia.</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img src="{%static 'img/judge.webp'%}" class="card-img-top" alt="judgeFoto">
+          <div class="card-body">
+            <h5 class="card-title">Judge</h5>
+            <p class="card-text">La Judge es un arma estable, pero se vuelve volátil si se dispara con mucha rapidez.
+                El modo de disparo principal es perfecto para las distancias cortas; si quieres acertar a objetivos a más de un metro de distancia, tienes que apuntar con calma y precisión.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{%static 'img/shorty.webp'%}" class="card-img-top" alt="shortyFoto">
+          <div class="card-body">
+            <h5 class="card-title">Shorty</h5>
+            <p class="card-text">Se trata de una escopeta ligera de barril corto que resulta letal cuerpo a cuerpo pero solo puede dispararse dos veces antes de tener que recargarla. Complementa de maravilla a las armas de larga distancia.</p> 
+          </div>
+        </div>
+        <div class="card">
+          <img src="{%static 'img/classic.webp'%}" class="card-img-top" alt="classicFoto">
+          <div class="card-body">
+            <h5 class="card-title">Classic</h5>
+            <p class="card-text">El modo de disparo principal es preciso si no se está en movimiento, y también dispone de un modo de disparo en ráfaga para los encuentros cuerpo a cuerpo.</p>        
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img src="{%static 'img/ghost.webp'%}" class="card-img-top" alt="ghostFoto">
+          <div class="card-body">
+            <h5 class="card-title">Ghost</h5>
+            <p class="card-text">La Ghost cuenta también con un amplio cargador por si lo necesitas. Si el objetivo está lejos, tienes que controlar la velocidad de disparo. Pulsa el gatillo con rapidez cuando los tengs cerca</p>           
+          </div>
+        </div>
+        <div class="card">
+          <img src="{%static 'img/frenzy.webp'%}" class="card-img-top" alt="frenzyFoto">
+          <div class="card-body">
+            <h5 class="card-title">Frenzy</h5>
+            <p class="card-text">Se trata de una pistola ametralladora ligera que destaca a la hora de disparar en movimiento. Tiene una velocidad de disparo muy alta, pero es difícil de controlar, así que a media distancia es mejor apostar por ráfagas cortas</p>            
+          </div>
+        </div>
+        <div class="card">
+          <img src="{%static 'img/sheriff.webp'%}" class="card-img-top" alt="sheriffFoto">
+          <div class="card-body">
+            <h5 class="card-title">Sheriff</h5>
+            <p class="card-text">Sus poderosos disparos causan un retroceso pronunciado y dominar esta arma requiere dedicación.</p>            
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img src="{%static 'img/spectre.webp'%}" class="card-img-top" alt="spectreFoto">
+          <div class="card-body">
+            <h5 class="card-title">Spectre</h5>
+            <p class="card-text">Es un arma todoterreno con estadísticas de daño, velocidad de disparo y precisión muy equilibradas tanto a distancias cortas como medias.</p>           
+          </div>
+        </div>
+        <div class="card">
+          <img src="{%static 'img/stinger.png'%}" class="card-img-top" alt="stingerFoto">
+          <div class="card-body">
+            <h5 class="card-title">Stinger</h5>
+            <p class="card-text">El cargador de 20 balas puede vaciarse en un abrir y cerrar de ojos si te dejas llevar por el retroceso, pero también te permitira acertar disparos letales a distancias medias con la ayuda de la mira y un disparo controlado.</p>            
+          </div>
+        </div>
+        <div class="card">
+          <img src="{%static 'img/melee.png'%}" class="card-img-top" alt="meleeFoto">
+          <div class="card-body">
+            <h5 class="card-title">Cuchillo</h5>
+            <p class="card-text">permite correr con rapidez, destruir objetos mucho más rápido y acabar con enemigos por la espalda de una sola cuchillada si usas el modo alternativo.</p>
+          </div>
+        </div>
+      </div>
+      <p class="estadisticas" id="estadisticas"> Estadisticas De Las Armas</p>
+    <table id="armasValo">
+        <tr>
+            <th>Armas</th>
+            <th>Precios</th>
+            <th>Daño cabeza</th>
+            <th>Daño pecho</th>
+            <th>Daño piernas y brazos</th>
+        </tr>
+    </table>
+    {% endblock %}

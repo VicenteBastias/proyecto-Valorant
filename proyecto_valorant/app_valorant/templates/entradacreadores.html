@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} entrar jugadas {% endblock %}
+
+{% block content %}
+<div class="card text-center" id="cardRegistro">
+    <div class="card-body">
+      <h5 class="card-title">Registro de creadores</h5>
+      <p class="card-text nav-link active">Esta opcion te permitira registrarte  como un creador de contenido. </p>
+      <a href="/creador_web/" class="btn btn-primary">Registrarse como creador</a>
+    </div>
+  </div>
+  <div class="card text-center" id="cardBuscar">
+    <div class="card-body">
+      <h5 class="card-title">listar creadores</h5>
+      <p class="card-text nav-link active" >Esta opcion te permitira listar los creadores en nuestro sistema </p>
+      <a href="/listar_creador/" class="btn btn-primary">listar creadores</a>
+    </div>
+  </div>
+  {% endblock %}

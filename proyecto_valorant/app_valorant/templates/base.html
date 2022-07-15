@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link rel="stylesheet " href="{% static 'css/styles.css' %}" id="dark-theme"/>
+</head>
+<body>
+    <h1 Class="text-center">VALORANT WIKI</h1>
+    <div class="container-md ">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+              <!-- Links -->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/index_web/">Index</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/agentes_web/">Agentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/armas_web/">Armas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="/mapas_web/">Mapas</a>
+                </li>
+                  <a class="nav-link " href="/contacto_web/">Contacto</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link " href="/entrar_creadores_web/">Creadores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="/entrar_jugadas_web/">Jugadas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/nosotros_web/">Nosotros</a>
+            </li>
+            </ul>
+            <ul class="nav navbar-right">
+                <button class="switch" id="switch">
+                    <span><i class="fa-solid fa-sun" id="spanSun"></i></span>
+                    <span><i class="fa-solid fa-moon" id="spanMoon"></i></span>
+                </button>
+            </ul>
+          </div>
+          </nav>
+        
+          {%block content%}{%endblock%}
+          <footer>
+            <script src="https://kit.fontawesome.com/5d36e69230.js" crossorigin="anonymous"></script>
+            <div class="container-fluid bg-dark p-3 text-white text-center">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img class="img-footer" src="{% static 'img/valorant-logo-svg.png' %}" width="200" height="200" alt="Logo">
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Index</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="agentes.html">Agentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="armas.html">Armas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="centerClock">
+                            <div class="fechaReloj">
+                                <div class="fecha">
+                                    <p id="diaSemana" class="diaSemana"></p>
+                                    <p id="dia" class="dia"></p>
+                                    <p>de</p>
+                                    <p id="mes" class="mes"></p>
+                                    <p>del</p>
+                                    <p id="annio" class="annio"></p>
+                                </div>
+                                <div class="reloj">
+                                    <p id="horas" class="horas"></p>
+                                    <p id="temperatura"></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="container-redes text-center col-md-4">
+                            <ul>
+                                <li> <a href="https://www.facebook.com/gaming/valorant" class="facebook"><i class="fab fa-facebook-f"></i> </a></li>
+                                <li> <a href="https://www.instagram.com/playvalorantofficial/" class="instagram"><i class="fab fa-instagram"></i> </a></li>
+                                <li> <a href="https://twitter.com/PlayVALORANT" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                                <li> <a href="https://www.youtube.com/c/PlayVALORANT" class="youtube"><i class="fab fa-youtube"></i> </a></li>
+                            </ul>
+                        </div> 
+                        <div class="col-md-4"></div>      
+                        </div>               
+                    </div>
+                </div>
+        </footer>
+        {%block js%}{%endblock%}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="{% static 'js/reloj.js' %}"></script>
+        <script src="{% static 'js/openweather.js' %}"></script>
+        <script src="https://kit.fontawesome.com/5d36e69230.js" crossorigin="anonymous"></script>
+        <script src="{% static 'js/modoOscuro.js' %"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

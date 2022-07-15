@@ -1,0 +1,38 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block title %} jugadas {% endblock %}
+
+    {% block content %}
+    <form action="/listar_jugadas/" method="get" class="listar">
+    {% csrf_token %}    
+        <table class="table">
+          <thead>
+          </body>
+          <th>ID Jugador</th>
+          <th>Mapa Jugado</th>
+          <th>Eliminaciones</th>
+          <th>Muertes</th>
+          <th>Agente jugado</th>
+          <th>Rango</th>
+          </tr>
+          </thead>
+          {% if informacion %}
+          {% for info in informacion %}
+          <tbody>
+          <td>{{info.idusuario}}</td>
+          <td>{{info.mapa}}</td>
+          <td>{{info.aliminaciones}}</td>
+          <td>{{info.muertes}}</td>
+          <td>{{info.agente}}</td>
+          <td>{{info.rango}}</td>
+          <td>{{info.imagen}}</td>
+          </tbody>
+          {% endfor %}
+          {% endif %}
+        </table>
+        <br>
+        <input class="botones" type="submit" value="Listar">
+        <button class="botones"><a href="/index/" class="link-dark" style="text-decoration: none;">Volver a inicio</a></button>
+      </form>
+      {% endblock %}

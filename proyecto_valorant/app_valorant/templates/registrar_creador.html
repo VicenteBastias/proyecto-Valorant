@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} contacto {% endblock %}
+    
+    {% block content %}
+    <form action="/creadores/" method="get">
+    {% csrf_token %}
+        <div class="row">
+            <div class="col">
+                <label for="" class="form-label">Nombre del creador</label>
+                <input type="text" class="form-control" name="creador">
+            </div>
+            <div class="col">
+                <label for="" class="form-label">Estilo</label>
+                <input type="text" class="form-control" name="estilo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="" class="form-label">Rango</label>
+                <select name="rango" id="rango">
+                    <option value="1">Hierro</option>
+                    <option value="2">Bronce</option>
+                    <option value="3">Plata</option>
+                    <option value="4">Oro</option>
+                    <option value="5">Platino</option>
+                    <option value="6">Diamante</option>
+                    <option value="7">Inmortal</option>
+                    <option value="8">Radiante</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="" class="form-label">Agentes</label>
+                <select name="agente" id="agente">
+                    <option value="1">Fade</option>
+                    <option value="2">Breach</option>
+                    <option value="3">Raze</option>
+                    <option value="4">Chamber</option>
+                    <option value="5">Kay/0</option>
+                    <option value="6">Syke</option>
+                    <option value="7">Cypher</option>
+                    <option value="8">Sova</option>
+                    <option value="9">Killjoy</option>
+                    <option value="10">Viper</option>
+                    <option value="11">Phoenix</option>
+                    <option value="12">Astra</option>
+                    <option value="13">Brimstone</option>
+                    <option value="14">Neon</option>
+                    <option value="15">Yoru</option>
+                    <option value="16">Sage</option>
+                    <option value="17">Reyna</option>
+                    <option value="18">Omen</option>
+                    <option value="19">Jett</option>
+                </select>
+            </div>
+        </div>
+        <div class="col">
+            <input type="submit" value="Enviar" class="btn btn-primary">
+        </div>
+    </form>
+    {% endblock %}
+    

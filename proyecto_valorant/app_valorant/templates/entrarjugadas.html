@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} entrar jugadas {% endblock %}
+
+{% block content %}
+<div class="card text-center" id="cardRegistro">
+    <div class="card-body">
+      <h5 class="card-title">Registro de jugadas</h5>
+      <p class="card-text nav-link active">Esta opcion te permitira registrar una jugada nuestro sistema. </p>
+      <a href="/jugadas_web/" class="btn btn-primary">Registrar jugada</a>
+    </div>
+  </div>
+  <div class="card text-center" id="cardBuscar">
+    <div class="card-body">
+      <h5 class="card-title">listar jugadas</h5>
+      <p class="card-text nav-link active" >Esta opcion te permitira listar las jugadas ya registradas en nuestro sistema </p>
+      <a href="/listar_jugadas_web/" class="btn btn-primary">listar jugadas</a>
+    </div>
+  </div>
+  {% endblock %}

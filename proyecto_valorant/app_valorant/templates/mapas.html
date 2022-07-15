@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} contacto {% endblock %}
+  
+    {% block content %}
+    <h2> Mapas </h2>
+  <div id="controlCarrusel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" id="mapasValo">
+      <div class="carousel-item active">
+        <img src="{%static 'img/mapasvalo.png'%}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#controlCarrusel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#controlCarrusel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/valorantMapas.js"></script>
+    {% endblock %}
+    

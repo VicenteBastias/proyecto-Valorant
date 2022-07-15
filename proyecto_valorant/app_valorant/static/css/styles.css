@@ -1,0 +1,214 @@
+#mapasValo {
+    display: flex;
+}
+
+.navbar {
+    border: 1px #FD4556 solid;
+    
+}
+
+body {
+    background-color: #eee8d5;
+}
+
+head h1 {
+    color: #FD4556
+}
+
+body h1 {
+    background-color: #eee8d5;
+    color: #FD4556;
+}
+
+p,
+h5 {
+    color: black;
+}
+
+div img {
+    padding: 50px 115px 20px;
+    width: 70%;
+}
+
+.card-title {
+    font-family: valoletra;
+    color: #FD4556;
+}
+
+#cardIndex {
+    padding: 20px 200px 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: solid 1px;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: #da3f4f;
+}
+
+tr:nth-child(odd) {
+    background-color: #FD4556;
+}
+
+tr:hover {
+    background-color: #53212B;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: valoletra;
+    src: url(fuentes/Valorant_Font.ttf)
+}
+
+h1,
+a {
+    font-family: valoletra;
+}
+
+.centerClock {
+    width: 90%;
+    max-width: 1000px;
+}
+
+.fechaReloj {
+    width: 40%;
+    margin: 32px;
+}
+
+.fechaReloj p {
+    display: inline-block;
+}
+
+.fecha {
+    font-family: valoletra;
+    background: #eee8d5;
+    width: auto;
+    color: #eee8d5;
+}
+
+.reloj {
+    font-family: valoletra;
+    background: #eee8d5;
+    width: auto;
+    color: #eee8d5;
+}
+
+.nav-links {
+    color: #eee8d5;
+    background-color: #FD4556;
+    font-family: valoletra;
+}
+
+/* iconos links paginas*/
+.container-redes {
+    display: flex;
+    height: 5px;
+
+
+}
+
+.container-redes ul li {
+    display: inline-block;
+    margin: 10px;
+    width: 50px;
+    height: 5px;
+    text-align: center;
+}
+
+.container-redes ul li a {
+    display: block;
+    padding: 10px;
+    background: #eee8d5;
+    color: #FD4556;
+    line-height: 50px;
+    font-size: 20px;
+
+}
+
+.container-redes ul:hover a {
+    filter: blur(2px);
+}
+
+.container-redes ul li a:hover {
+    transform: translateY(-2px) scale(1.5);
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, .2);
+    filter: none;
+}
+#map {
+    height: 400px;
+    width: 100%;
+    
+  }
+.card {
+    background-color: #eee8d5;
+}
+#armas {
+    font-family: valoletra;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 100px;
+}
+#estadisticas{
+    font-family: valoletra;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 100px;
+}
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+ }
+#va-img{
+    padding: 20px 115px 20px;
+    width: 80%;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.accordion{
+    text-align: center;
+    padding-top: 50px;
+}
+.body{
+    background-color: #eee8d5;
+}
+
+.d-block{
+    height: 700px;
+}
+h2{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0.5px;
+    font-family: valoletra;
+    color:black;
+}
+#contrasena {
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+h6{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+#temperatura{
+    background-color: #eee8d5;
+    font-family: valoLetra;
+}
+#footer{
+    bottom: 0;
+    width: 100%;
+}
