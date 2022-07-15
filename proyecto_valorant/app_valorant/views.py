@@ -17,10 +17,11 @@ def registro(request):
     contrasena_hash = bcrypt.hashpw(request.POST['contrasena'].encode(), bcrypt.gensalt()).decode()
     if len(nombre_aux)>0 and len(usuario_aux)>0 and len(email_aux)>0 and len(pais_aux)>0 and len(edad)>0 and len(contrasena_hash)>0:
         info=User.objects.create(nombre=nombre_aux,usuario=usuario_aux,email=email_aux,pais=pais_aux,edad=edad,contrasena=contrasena_hash)
-        mensaje="Usuario registrado correctamente"
+        messages.info(request,'usuario registrado ingresado con exito')
     else:
-        mensaje="No se pudo registrar el usuario"
-    return HttpResponse(mensaje)
+        messages.info(request,'usario no se ha ingresado con exito')
+    return HttpResponseRedirect("/registro_web/")
+
 
 def login(request):
     if request.method == 'GET':
